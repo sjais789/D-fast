@@ -11,8 +11,8 @@ server.listen(process.env.port || process.env.PORT || 4041, function () {
 var bot;
 // Create chat bot and listen to messages
 var connector = new builder.ChatConnector({
-    appId:'ebcdbf82-5656-40c1-b2ea-83baa6e85d41',       //create your app id and app password log on to microsoft bot framework
-    appPassword: 'AyvWigxY3fpMkrffPWcXonO'
+    appId:'YOUR ID',       //create your app id and app password log on to microsoft bot framework
+    appPassword: 'YOUR APP PASSWORD'
 });
 server.post('/api/messages', connector.listen());
 
@@ -30,7 +30,7 @@ var bot;
 bot = new builder.UniversalBot(connector,[
  function (session) {
 
- builder.Prompts.text(session,"Hello Humans !! I am D-Fast :) Tell me your name?");       },    //waterfall mode
+ builder.Prompts.text(session,"Hello Humans !! I am D-Fast :) Tell me your name?");       },    //waterfall modeL
  function(session,result,next) {
  session.send("hello %s", result.response);
  next();
