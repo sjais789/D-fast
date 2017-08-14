@@ -9,8 +9,8 @@ var cognitiveservices=require('botbuilder-cognitiveservices');
 
 
 var recognizer=new cognitiveservices.QnAMakerRecognizer({
-    knowledgeBaseId:'deb8bda7-d7a9-4e33-95f8-351d6c5b48cf',
-    subscriptionKey:'542f08ab1f2d4873aaeac72a3230a55b'});
+    knowledgeBaseId:'YOUR ID',
+    subscriptionKey:'YOUR KEY'});
 var N= new cognitiveservices.QnAMakerDialog(
     {
         recognizers:[recognizer],
