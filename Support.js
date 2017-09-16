@@ -9,7 +9,7 @@ var cognitiveservices=require('botbuilder-cognitiveservices');
 
 
 var recognizer=new cognitiveservices.QnAMakerRecognizer({
-    knowledgeBaseId:'YOUR ID',
+    knowledgeBaseId:'YOUR ID',   // GET IT FROM MICROSOFT COGNITIVE SERVICES  
     subscriptionKey:'YOUR KEY'});
 var N= new cognitiveservices.QnAMakerDialog(
     {
